@@ -1,0 +1,60 @@
+<html>
+    <head>
+      
+        <title>Project Management</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="/css/project.css">
+        <script src="/script/logic.js"></script> 
+
+
+        <header>
+            <h1>ENSC Project Scheduler</h1>
+        </header>
+
+        <!-- sidebar navigation -->
+        <nav class="sidebar">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">Logout</a></li> 
+        
+                <!-- padagdag nalang ng navigation -->
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="task-form">
+                <button id="add-project">Add Project</button>
+            </div>
+            <div class="task-list" id="task-list">
+                <h2>Pending Projects</h2>
+                
+              
+            </div>
+
+            <div class="completed-tasks" id="completed-tasks">
+                <h2>Completed Projects</h2> 
+              
+            </div>
+            
+            
+        </main>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Add Project Details</h2>
+                <input type="text" id="project-name" placeholder="Project Name">
+                <textarea id="project-details" placeholder="Small Details about the Project"></textarea>
+                <input type="number" id="project-duration" placeholder="Duration in minutes">
+                <input type="date" id="project-date">
+                <button id="submit-project">Submit Project</button>
+            </div>
+        </div>
+     
+        <audio id="completion-audio" src="/assets/completion.mp3" preload="auto"></audio>
+
+        
+    </body>
+</html>
